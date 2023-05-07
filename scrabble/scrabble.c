@@ -49,7 +49,7 @@ int compute_score(string word)
             // Subtracting from 65 as the first charater is A
             // A = 65 hence, following will give the index of array POINT[]
             int i = (int) toupper(word[n]) - 65;
-            sum+=POINTS[i];
+            sum += POINTS[i];
         }
         n++;
     }
