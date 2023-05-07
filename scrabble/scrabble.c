@@ -20,8 +20,8 @@ int main(void)
     int score2 = compute_score(word2);
     */
     // TODO: Print the winner
-    char charater = 'A';
-    printf("%i", character);
+    char word = 'A';
+    printf("%c", word);
 }
 
 int compute_score(string word)
