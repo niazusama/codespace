@@ -10,7 +10,7 @@ int compute_score(string word);
 
 int main(void)
 {
-    /*
+
     // Get input words from both players
     string word1 = get_string("Player 1: ");
     string word2 = get_string("Player 2: ");
@@ -18,14 +18,13 @@ int main(void)
     // Score both words
     int score1 = compute_score(word1);
     int score2 = compute_score(word2);
-    */
+
     // TODO: Print the winner
-    char word = 'A';
-    printf("%i\n", word);
 }
 
 int compute_score(string word)
 {
-    return 0;
+    int n = 0;
+    
     // TODO: Compute and return score for string
 }
