@@ -21,10 +21,11 @@ int main(void)
     */
     // TODO: Print the winner
     char word = 'A';
-    printf("%c", word);
+    printf("%i\n", word);
 }
 
 int compute_score(string word)
 {
+    return 0;
     // TODO: Compute and return score for string
 }
