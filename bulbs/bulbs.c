@@ -24,3 +24,11 @@ void print_bulb(int bit)
         printf("\U0001F7E1");
     }
 }
+
+void dec_2_binary(string word)
+{
+    // Index for a character
+    int n = 0;
+
+    // 
+}
