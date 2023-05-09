@@ -5,10 +5,12 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
+void dec_2_binary(string word);
 
 int main(void)
 {
-    string message = get_string("Message: ")
+    string message = get_string("Message: ");
+    dec_2_binary(message);
 }
 
 void print_bulb(int bit)
@@ -33,6 +35,8 @@ void dec_2_binary(string word)
     // Converting the charater to decimal
     while (word[n] != '\0')
     {
-        
+        int dec = word[n];
+        printf("%i\n", dec);
+        n++;
     }
 }
