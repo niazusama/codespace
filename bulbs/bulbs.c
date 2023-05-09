@@ -5,12 +5,16 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-void dec_2_binary(string word);
+int dec_2_binary(string word);
 
 int main(void)
 {
     string message = get_string("Message: ");
-    dec_2_binary(message);
+    for (int i = 0, n = strlen(message); i < n; i++)
+    {
+    int dec = message[i];
+    int val = dec_2_binary(dec);
+    }
 }
 
 void print_bulb(int bit)
@@ -27,17 +31,7 @@ void print_bulb(int bit)
     }
 }
 
-int dec_2_binary(string word)
+int dec_2_binary(int x)
 {
-    // Length of string
-    int n = strlen(word);
-
-    int dec[n];
-
-    // Converting the charater to decimal
-    for (int i = 0; i < n; i++)
-    {
-        dec[i] = word[i];
-    }
-    
+    return 0;
 }
