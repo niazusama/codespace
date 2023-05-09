@@ -33,7 +33,7 @@ void print_bulb(int bit)
 
 int dec_to_binary(int x, int bit)
 {
-    while (x != 0 || x != 1)
+    while (x != 0 && x != 1)
     {
         int i = x % 2;
         x = x / 2;
