@@ -41,13 +41,13 @@ int dec_to_binary(int x, int bit)
         x = x / 2;
         n++;
     }
-
+    
     do
     {
         arr[n] = 0;
         n++;
     }
-    while(n != bit);
+    while(n != bit-1);
 
     while (n != 0)
     {
