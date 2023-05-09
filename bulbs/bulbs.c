@@ -40,5 +40,6 @@ int dec_to_binary(int x, int bit)
 
         printf("%i remiander\n",i);
     }
+    
     return 0;
 }
