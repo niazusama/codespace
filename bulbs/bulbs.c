@@ -5,7 +5,7 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-int dec_to_binary(int x);
+void dec_to_binary(int x);
 
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
     for (int i = 0, n = strlen(message); i < n; i++)
     {
     int dec = message[i];
-    int val = dec_to_binary(dec);
+    dec_to_binary(dec);
     }
 }
 
@@ -31,7 +31,7 @@ void print_bulb(int bit)
     }
 }
 
-int dec_to_binary(int x)
+void encode(int x)
 {
     // Index of binary array
     int n = 0;
@@ -44,7 +44,7 @@ int dec_to_binary(int x)
     while (x != 0 && x != 1)
     {
         // For last entry of binary array store the reminder
-        arr[7-n] = x % 2;
+        arr[7 - n] = x % 2;
 
         // Dividing the decimal number
         x = x / 2;
@@ -52,7 +52,7 @@ int dec_to_binary(int x)
     }
 
     // Storing the Qoutient in binary array
-    arr[7-n] = x;
+    arr[7 - n] = x;
 
     n = 0;
     while (n < 8)
@@ -61,5 +61,4 @@ int dec_to_binary(int x)
         n++;
     }
     printf("\n");
-    return 0;
 }
