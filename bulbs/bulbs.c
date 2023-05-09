@@ -45,13 +45,15 @@ int dec_to_binary(int x, int bit)
     do
     {
         arr[n] = 0;
+        n++;
     }
-    while(n != bit-1);
+    while(n != bit);
 
-    while (n == 0)
+    while (n != 0)
     {
         printf("%i", arr[n]);
         n--;
     }
+    printf("\n");
     return 0;
 }
