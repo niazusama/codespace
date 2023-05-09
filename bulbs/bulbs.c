@@ -30,5 +30,6 @@ void dec_2_binary(string word)
     // Index for a character
     int n = 0;
 
-    // 
+    // Converting the charater to decimal
+    while ()
 }
