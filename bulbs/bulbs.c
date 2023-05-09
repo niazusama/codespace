@@ -57,7 +57,6 @@ int dec_to_binary(int x)
     n = 0;
     while (n < 8)
     {
-        //printf("%i", arr[n]);
         print_bulb(arr[n]);
         n++;
     }
