@@ -27,15 +27,17 @@ void print_bulb(int bit)
     }
 }
 
-void dec_2_binary(string word)
+int dec_2_binary(string word)
 {
-    // Index for a character
-    int n = 0;
+    // Length of string
+    int n = strlen(word);
+
+    int dec[n];
 
     // Converting the charater to decimal
-    while (word[n] != '\0')
+    for (int i = 0; i < n; i++)
     {
-        int dec = word[n];
-        n++;
+        dec[i] = word[i];
     }
+    
 }
