@@ -33,21 +33,27 @@ void print_bulb(int bit)
 
 int dec_to_binary(int x, int bit)
 {
+    // Index of binary array
     int n = 0;
-    int arr[8];
+
+    // Binary array of 8 bits
+    int arr[bit] = 0;
+
+    // Converting the number to bits
+
+    // If the Qoutient is either zero or one
     while (x != 0 && x != 1)
     {
-        arr[7-n] = x % 2;
+        // For last entry of binary array store the reminder
+        arr[bit-n] = x % 2;
+
+        // Dividing the decimal number
         x = x / 2;
         n++;
     }
 
-    do
-    {
-        arr[n] = 0;
-        n++;
-    }
-    while(n != bit-1);
+    // Storing the Qoutient in binary array
+    arr[bit-n] = x;
 
     while (n != 0)
     {
