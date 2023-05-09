@@ -54,11 +54,10 @@ void encode(int x)
     // Storing the Qoutient in binary array
     arr[BITS_IN_BYTE - n] = x;
 
-    n = 0;
-    while (n < 8)
+    // Printing the light bulbs
+    for (int i = 0; i < BITS_IN_BYTE; i++)
     {
-        print_bulb(arr[n]);
-        n++;
+        print_bulb(arr[i]);
     }
     printf("\n");
 }
