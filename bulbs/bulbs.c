@@ -13,7 +13,7 @@ int main(void)
     for (int i = 0, n = strlen(message); i < n; i++)
     {
     int dec = message[i];
-    int val = dec_to_binary(dec);
+    int val = dec_to_binary(dec, 8);
     }
 }
 
@@ -31,7 +31,11 @@ void print_bulb(int bit)
     }
 }
 
-int dec_to_binary(int x)
+int dec_to_binary(int x, int bit)
 {
+    while (x/2 != 0 || x/2 != 1)
+    {
+        
+    }
     return 0;
 }
