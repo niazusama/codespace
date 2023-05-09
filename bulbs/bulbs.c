@@ -9,11 +9,14 @@ void encode(int x);
 
 int main(void)
 {
+    // Prompting user for message
     string message = get_string("Message: ");
+
+    // Calling encode func to light up the bulbs
     for (int i = 0, n = strlen(message); i < n; i++)
     {
-    int dec = message[i];
-    encode(dec);
+        int dec = message[i];
+        encode(dec);
     }
 }
 
