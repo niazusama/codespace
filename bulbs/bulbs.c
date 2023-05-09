@@ -44,7 +44,7 @@ int dec_to_binary(int x)
     while (x != 0 && x != 1)
     {
         // For last entry of binary array store the reminder
-        arr[8-n] = x % 2;
+        arr[7-n] = x % 2;
 
         // Dividing the decimal number
         x = x / 2;
@@ -52,7 +52,7 @@ int dec_to_binary(int x)
     }
 
     // Storing the Qoutient in binary array
-    arr[8-n] = x;
+    arr[7-n] = x;
 
     while (n != 0)
     {
