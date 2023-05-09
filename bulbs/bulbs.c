@@ -38,8 +38,7 @@ int dec_to_binary(int x, int bit)
         int i = x % 2;
         x = x / 2;
 
-        printf("%i\n remiander",i);
-        printf("%i\n qoutient",x);
+        printf("%i remiander\n",i);
     }
     return 0;
 }
