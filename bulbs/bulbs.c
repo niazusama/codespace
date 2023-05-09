@@ -34,7 +34,7 @@ void print_bulb(int bit)
 int dec_to_binary(int x, int bit)
 {
     int n = 0;
-    int arr[];
+    int arr[8];
     while (x != 0 && x != 1)
     {
         arr[n] = x % 2;
@@ -46,7 +46,7 @@ int dec_to_binary(int x, int bit)
     {
         arr[n] = 0;
     }
-    while(n != bit-1)
+    while(n != bit-1);
 
     while (n == 0)
     {
