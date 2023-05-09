@@ -41,7 +41,7 @@ int dec_to_binary(int x, int bit)
         x = x / 2;
         n++;
     }
-    
+
     do
     {
         arr[n] = 0;
