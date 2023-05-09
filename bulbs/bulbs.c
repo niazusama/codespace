@@ -54,6 +54,12 @@ int dec_to_binary(int x)
     // Storing the Qoutient in binary array
     arr[7-n] = x;
 
-    // Returning the binary value
-    return arr;
+    n = 0;
+    while (n < 8)
+    {
+        printf("%i", arr[n]);
+        n++;
+    }
+    printf("\n");
+    return 0;
 }
