@@ -8,7 +8,7 @@ void print_bulb(int bit);
 
 int main(void)
 {
-    print_bulb(1);
+    string message = get_string("Message: ")
 }
 
 void print_bulb(int bit)
