@@ -34,9 +34,9 @@ void print_bulb(int bit)
 void encode(int x)
 {
     // Index of binary array
-    int n = 0;
+    int n = 1;
     // Binary array of 8 bits
-    int arr[8] = {0};
+    int arr[BITS_IN_BYTE] = {0};
 
     // Converting the number to bits
 
@@ -44,7 +44,7 @@ void encode(int x)
     while (x != 0 && x != 1)
     {
         // For last entry of binary array store the reminder
-        arr[7 - n] = x % 2;
+        arr[BITS_IN_BYTE - n] = x % 2;
 
         // Dividing the decimal number
         x = x / 2;
@@ -52,7 +52,7 @@ void encode(int x)
     }
 
     // Storing the Qoutient in binary array
-    arr[7 - n] = x;
+    arr[BITS_IN_BYTE - n] = x;
 
     n = 0;
     while (n < 8)
