@@ -31,5 +31,8 @@ void dec_2_binary(string word)
     int n = 0;
 
     // Converting the charater to decimal
-    while ()
+    while (word[n] != '\0')
+    {
+        
+    }
 }
