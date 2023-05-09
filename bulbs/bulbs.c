@@ -33,9 +33,13 @@ void print_bulb(int bit)
 
 int dec_to_binary(int x, int bit)
 {
-    while (x/2 != 0 || x/2 != 1)
+    while (x / 2 != 0 || x / 2 != 1)
     {
-        
+        int i = x % 2;
+        x /= 2;
+
+        printf("%i\n remiander",i);
+        printf("%i\n qoutient",x);
     }
     return 0;
 }
