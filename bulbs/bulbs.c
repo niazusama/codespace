@@ -5,7 +5,7 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-int dec_2_binary(string word);
+int dec_to_binary(string word);
 
 int main(void)
 {
@@ -13,7 +13,7 @@ int main(void)
     for (int i = 0, n = strlen(message); i < n; i++)
     {
     int dec = message[i];
-    int val = dec_2_binary(dec);
+    int val = dec_to_binary(dec);
     }
 }
 
@@ -31,7 +31,7 @@ void print_bulb(int bit)
     }
 }
 
-int dec_2_binary(int x)
+int dec_to_binary(int x)
 {
     return 0;
 }
