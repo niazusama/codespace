@@ -36,7 +36,8 @@ void dec_2_binary(string word)
     while (word[n] != '\0')
     {
         int dec = word[n];
-        printf("%i\n", dec);
+        
+        
         n++;
     }
 }
