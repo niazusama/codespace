@@ -33,12 +33,25 @@ void print_bulb(int bit)
 
 int dec_to_binary(int x, int bit)
 {
+    int n = 0;
+    int arr[];
     while (x != 0 && x != 1)
     {
-        int i = x % 2;
+        arr[n] = x % 2;
         x = x / 2;
-        printf("%i remiander\n",i);
+        n++;
     }
 
+    do
+    {
+        arr[n] = 0;
+    }
+    while(n != bit-1)
+
+    while (n == 0)
+    {
+        printf("%i", arr[n]);
+        n--;
+    }
     return 0;
 }
