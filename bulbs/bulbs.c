@@ -37,7 +37,7 @@ int dec_to_binary(int x, int bit)
     int arr[8];
     while (x != 0 && x != 1)
     {
-        arr[n] = x % 2;
+        arr[7-n] = x % 2;
         x = x / 2;
         n++;
     }
