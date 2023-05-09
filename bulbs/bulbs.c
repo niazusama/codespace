@@ -5,7 +5,7 @@
 const int BITS_IN_BYTE = 8;
 
 void print_bulb(int bit);
-int dec_to_binary(string word);
+int dec_to_binary(int x, int bit);
 
 int main(void)
 {
