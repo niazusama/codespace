@@ -31,13 +31,12 @@ void print_bulb(int bit)
     }
 }
 
-int dec_to_binary(int x, int bit)
+int dec_to_binary(int x)
 {
     // Index of binary array
     int n = 0;
-
     // Binary array of 8 bits
-    int arr[bit] = 0;
+    int arr[8] = {0};
 
     // Converting the number to bits
 
@@ -45,7 +44,7 @@ int dec_to_binary(int x, int bit)
     while (x != 0 && x != 1)
     {
         // For last entry of binary array store the reminder
-        arr[bit-n] = x % 2;
+        arr[8-n] = x % 2;
 
         // Dividing the decimal number
         x = x / 2;
@@ -53,7 +52,7 @@ int dec_to_binary(int x, int bit)
     }
 
     // Storing the Qoutient in binary array
-    arr[bit-n] = x;
+    arr[8-n] = x;
 
     while (n != 0)
     {
