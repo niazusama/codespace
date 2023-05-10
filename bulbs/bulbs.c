@@ -53,7 +53,7 @@ void encode(int x)
         x = x / 2;
         n++;
     }
-
+    
     // Storing the Qoutient in binary array
     arr[BITS_IN_BYTE - n] = x;
 
