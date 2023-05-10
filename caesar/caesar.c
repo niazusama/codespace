@@ -50,4 +50,11 @@ int main(int argc, string argv[])
 
 }
 
-void dycrip
+void ciphertext(string word, int key)
+{
+    // For Each letter shifting its value
+    for (int i = 0, n = strlen(word); i < n; i++)
+    {
+        
+    }
+}
