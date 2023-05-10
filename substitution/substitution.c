@@ -55,9 +55,9 @@ int main(int argc, string argv[])
     }
 
     // Prompting user for messager to cipher
-    //string messsage = get_string("Plaintext:  ");
+    string messsage = get_string("Plaintext:  ");
     // Deciphering the message
-    //string cipher = ciphertext(messsage, key);
+    string cipher = ciphertext(messsage, key);
     //printf("ciphertext: %s\n", cipher);
     return 0;
 
