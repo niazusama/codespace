@@ -36,10 +36,14 @@ int main(int argc, string argv[])
             printf("Entered key must have non-repeating 26 alphabets\n");
             exit(1);
         }
-        else if ()
+
+        for (int j = 0; j < i; j++)
         {
+            if (i != j && argv[1][i] == argv[1][j])
+            {
             printf("Entered key must have non-repeating 26 alphabets\n");
             exit(1);
+            }
         }
     }
 
