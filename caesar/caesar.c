@@ -65,8 +65,8 @@ void ciphertext(string word, int key)
             if (isupper(word[i]))
             {
                 shift = (word[i] - 65 + key ) % 26;
-                word[i] = word[i] + shift + 65;
-                printf("Upper case characters are: %i\n", shift);
+                word[i] = word[i] + shift;
+                printf("Upper case characters are: %c\n", word[i]);
             }
             else
             {
