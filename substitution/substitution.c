@@ -9,7 +9,6 @@ string ciphertext(string word, int key);
 int main(int argc, string argv[])
 {
 
-    string key;
     // If no or more than one command line argument is provided
     if (argc != 2)
     {
@@ -45,6 +44,15 @@ int main(int argc, string argv[])
             exit(1);
             }
         }
+    }
+
+    string key = argv[1];
+
+    // As key has 26 entries
+    for (int i = 0; i < n; i++)
+    {
+        key[i] = isupper(key[i]) - 65;
+        printf("%i\n", key[i]);
     }
 
     // Prompting user for messager to cipher
