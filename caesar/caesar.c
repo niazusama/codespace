@@ -5,6 +5,7 @@
 
 int main(int argc, string argv[])
 {
+    bool isnumeric = true;
     // If no command line argument is provided
     if (argc == 1)
     {
@@ -21,10 +22,8 @@ int main(int argc, string argv[])
     else
     {
         // Finding if the key is Numerical
-        bool isnumeric = true;
         for (int i = 0, n = strlen(argv[1]); i < n; i++)
         {
-            printf("%c\n", argv[1][i]);
             // If the character is alphabetic return false
             if (isalpha(argv[1][i]))
             {
@@ -35,7 +34,11 @@ int main(int argc, string argv[])
 
     if (!isnumeric)
     {
-        printf("Usage: ./caesar key");
+        printf("Usage: ./caesar key\n");
+    }
+    else
+    {
+        printf("Key: %s is accepted\n", argv[1]);
     }
 
 }
