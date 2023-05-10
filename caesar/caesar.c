@@ -4,7 +4,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 
-void ciphertext(string word, int key);
+string ciphertext(string word, int key);
 
 int main(int argc, string argv[])
 {
@@ -49,11 +49,12 @@ int main(int argc, string argv[])
     }
 
     string messsage = get_string("Plaintext:  ");
-    ciphertext(messsage, key);
+    string cipher = ciphertext(messsage, key);
+    printf("ciphertext: %s\n", cipher);
 
 }
 
-void ciphertext(string word, int key)
+string ciphertext(string word, int key)
 {
     // For Each letter shifting its value
     int shift = 0;
@@ -71,16 +72,15 @@ void ciphertext(string word, int key)
                 // So subtracting 65 (A in ASCII) gives us index in range of 0 - 25
                 shift = (word[i] - 65 + key) % 26;
                 word[i] = shift + 65;
-                printf("Upper case characters are: %C\n", word[i]);
             }
             else
             {
                 // For lower case characters, a = 97
-                shift = (word[i] - 97);
-                //word[i] = (word[i] + key) % 26;
-                printf("Lower case characters are: %c\n", shift);
+                shift = (word[i] - 97 + key) % 26;
+                word[i] = shift + 97;
             }
         }
 
     }
+    return word;
 }
