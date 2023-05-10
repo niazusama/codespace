@@ -28,7 +28,7 @@ int main(int argc, string argv[])
     // If only one command line argument is provided
 
     // Finding if the key is alphabatic? and non-repating
-    for (int i = 0, n = strlen(argv[1]); i < n; i++)
+    for (int i = 0; i < n; i++)
     {
         // If the character is alphabetic return false
         if (!isalpha(argv[1][i]))
