@@ -10,14 +10,8 @@ int main(int argc, string argv[])
 {
     bool alpha = true;
     int key = 0;
-    // If no command line argument is provided
-    if (argc == 1)
-    {
-        printf("Please enter the key!\n");
-        return 1;
-    }
-    // if more than one command line argument is provided
-    else if (argc > 2)
+    // If no or more than one command line argument is provided
+    if (argc != 2)
     {
         printf("Usage: %s key\n", argv[0]);
         return 1;
