@@ -37,7 +37,7 @@ int main(int argc, string argv[])
             exit(1);
         }
 
-        for (int j = 0; j < i; j++)
+        for (int j = 0; j < n; j++)
         {
             if (i != j && argv[1][i] == argv[1][j])
             {
