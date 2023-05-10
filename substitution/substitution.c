@@ -52,7 +52,6 @@ int main(int argc, string argv[])
     for (int i = 0; i < n; i++)
     {
         key[i] = toupper(key[i]) - 65;
-        printf("%i\n", key[i]);
     }
 
     // Prompting user for messager to cipher
