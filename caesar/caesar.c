@@ -41,7 +41,8 @@ int main(int argc, string argv[])
     }
     else
     {
-        printf("Key: %s is accepted\n", argv[1]);
+        int key = atoi(argv[1]);
+        printf("Key: %i is accepted integer\n", key);
     }
 
 }
