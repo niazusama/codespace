@@ -63,10 +63,12 @@ void ciphertext(string word, int key)
         {
             if (isupper(word[i]))
             {
+                word[i] = word[i] + key;
                 printf("Upper case characters are: %c\n", word[i]);
             }
             else
             {
+                word[i] = word[i] + key;
                 printf("Lower case characters are: %c\n", word[i]);
             }
         }
