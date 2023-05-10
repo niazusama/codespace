@@ -73,6 +73,7 @@ void ciphertext(string word, int key)
             }
             else
             {
+                // For lower case characters, a = 97
                 word[i] = word[i] + (key % 26);
                 printf("Lower case characters are: %c\n", word[i]);
             }
