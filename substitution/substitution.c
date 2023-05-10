@@ -51,7 +51,7 @@ int main(int argc, string argv[])
     // As key has 26 entries
     for (int i = 0; i < n; i++)
     {
-        key[i] = isupper(key[i]) - 65;
+        key[i] = toupper(key[i]) - 65;
         printf("%i\n", key[i]);
     }
 
