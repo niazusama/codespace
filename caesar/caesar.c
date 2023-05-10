@@ -69,9 +69,9 @@ void ciphertext(string word, int key)
                 // This is because if the key is greater than 26
                 // We have to restart from begining
                 // So subtracting 65 (A in ASCII) gives us index in range of 0 - 25
-                //shift = (word[i] - 65 + key ) % 26;
-                word[i] = (word[i] + key)%26;
-                printf("Upper case characters are: %i\n", word[i]);
+                shift = (word[i] - 65) + (key % 26);
+                word[i] = word[i] + shift;
+                printf("Upper case characters are: %i\n", shift);
             }
             else
             {
