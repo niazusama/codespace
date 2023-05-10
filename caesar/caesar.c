@@ -46,7 +46,7 @@ int main(int argc, string argv[])
         return 1;
     }
 
-    string messsage = get_string("Plaintext: ");
+    string messsage = get_string("Plaintext:  ");
 
 }
 
