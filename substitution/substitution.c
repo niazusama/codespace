@@ -14,25 +14,21 @@ int main(int argc, string argv[])
     if (argc != 2)
     {
         printf("Usage: %s key\n", argv[0]);
-        return 1;
+        exit(1);
     }
 
     // If only one command line argument is provided
-    else
+    // Finding if the key is alpha
+    for (int i = 0, n = strlen(argv[1]); i < n; i++)
     {
-        // Finding if the key is alpha
-        for (int i = 0, n = strlen(argv[1]); i < n; i++)
+        // If the character is alphabetic return false
+        if (!isalpha(argv[1][i]))
         {
-            // If the character is alphabetic return false
-            if (!isalpha(argv[1][i]))
-            {
-                alpha = false;
-                printf("Please Enter only alphabets\n");
-                return 1;
-            }
+            alpha = false;
+            printf("Please Enter only alphabets\n");
+            return 1;
         }
     }
-
 
     // Prompting user for messager to cipher
     //string messsage = get_string("Plaintext:  ");
