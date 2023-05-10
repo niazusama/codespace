@@ -7,6 +7,7 @@
 int main(int argc, string argv[])
 {
     bool isnumeric = true;
+    int key = 0;
     // If no command line argument is provided
     if (argc == 1)
     {
@@ -33,16 +34,20 @@ int main(int argc, string argv[])
         }
     }
 
-    // If key is not numeric print error
-    if (!isnumeric)
+    // If key is numeric convert to str to int
+    if (isnumeric)
+    {
+        key = atoi(argv[1]);
+    }
+    // Print error and return 1
+    else
     {
         printf("Usage: ./caesar key\n");
         return 1;
     }
-    else
-    {
-        int key = atoi(argv[1]);
-        printf("Key: %i is accepted integer\n", key);
-    }
+
+    string messsage = get_string("Plaintext: ");
 
 }
+
+void dycrip
