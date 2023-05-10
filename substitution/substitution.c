@@ -58,7 +58,7 @@ int main(int argc, string argv[])
     string messsage = get_string("Plaintext:  ");
     // Deciphering the message
     string cipher = ciphertext(messsage, key);
-    //printf("ciphertext: %s\n", cipher);
+    printf("ciphertext: %s\n", cipher);
     return 0;
 
 }
@@ -75,17 +75,15 @@ string ciphertext(string word, string key)
             // If character is upper
             if (isupper(word[i]))
             {
-               index = word[i] - 65;
-               word[i] = key[index] + 65;
-               printf("%c\n", word[i]);
+                // Getting the index of Key array to substitute the decrypted character
+                index = word[i] - 65;
+                word[i] = key[index] + 65;
             }
-            /*
             else
             {
-                // For lower case characters, a = 97
-                shift = (word[i] - 97 + key) % 26;
-                word[i] = shift + 97;
-            }*/
+                index = word[i] - 97;
+                word[i] = key[index] + 97;
+            }
         }
 
     }
