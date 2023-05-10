@@ -32,9 +32,11 @@ int main(int argc, string argv[])
         }
     }
 
+    // If key is not numeric print error
     if (!isnumeric)
     {
         printf("Usage: ./caesar key\n");
+        return 1;
     }
     else
     {
