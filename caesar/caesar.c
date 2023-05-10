@@ -71,14 +71,14 @@ void ciphertext(string word, int key)
                 // So subtracting 65 (A in ASCII) gives us index in range of 0 - 25
                 shift = (word[i] - 65);
                 //word[i] = (word[i] + key) % 26;
-               // printf("Upper case characters are: %C\n", word[i]);
+                printf("Upper case characters are: %C\n", shift);
             }
             else
             {
                 // For lower case characters, a = 97
                 shift = (word[i] - 97);
                 //word[i] = (word[i] + key) % 26;
-                //printf("Lower case characters are: %c\n", word[i]);
+                printf("Lower case characters are: %c\n", shift);
             }
         }
 
