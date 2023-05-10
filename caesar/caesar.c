@@ -4,6 +4,8 @@
 #include <ctype.h>
 #include <stdlib.h>
 
+void ciphertext(string word, int key);
+
 int main(int argc, string argv[])
 {
     bool isnumeric = true;
@@ -47,6 +49,7 @@ int main(int argc, string argv[])
     }
 
     string messsage = get_string("Plaintext:  ");
+    ciphertext(messsage, key);
 
 }
 
@@ -55,6 +58,13 @@ void ciphertext(string word, int key)
     // For Each letter shifting its value
     for (int i = 0, n = strlen(word); i < n; i++)
     {
-        
+        if (isupper(word[i]))
+        {
+            printf("Upper case characters are: %c\n", word[i]);
+        }
+        else
+        {
+            printf("Lower case characters are: %c\n", word[i]);
+        }
     }
 }
