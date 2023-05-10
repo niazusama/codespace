@@ -8,7 +8,7 @@ string ciphertext(string word, int key);
 
 int main(int argc, string argv[])
 {
-    bool isnumeric = true;
+    bool alpha = true;
     int key = 0;
     // If no command line argument is provided
     if (argc == 1)
