@@ -21,26 +21,25 @@ int main(int argc, string argv[])
     int n = strlen(argv[1]);
     if (n != 26)
     {
-        printf("Entered key must have non-repeating 26 characters\n");
+        printf("Entered key must have non-repeating 26 alphabets\n");
         exit(1);
     }
 
     // If only one command line argument is provided
 
-    bool alpha = true;
     // Finding if the key is alphabatic? and non-repating
     for (int i = 0, n = strlen(argv[1]); i < n; i++)
     {
         // If the character is alphabetic return false
         if (!isalpha(argv[1][i]))
         {
-            alpha = false;
-            printf("Please Enter only alphabets\n");
+            printf("Entered key must have non-repeating 26 alphabets\n");
             exit(1);
         }
-        else
+        else if ()
         {
-            key[i] = 
+            printf("Entered key must have non-repeating 26 alphabets\n");
+            exit(1);
         }
     }
 
