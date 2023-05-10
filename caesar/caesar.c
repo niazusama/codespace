@@ -1,6 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main(int argc, string argv[])
 {
@@ -24,8 +25,17 @@ int main(int argc, string argv[])
         for (int i = 0, n = strlen(argv[1]); i < n; i++)
         {
             printf("%c\n", argv[1][i]);
-            
+            // If the character is alphabetic return false
+            if (isalpha(argv[1][i]))
+            {
+                isnumeric = false;
+            }
         }
+    }
+
+    if (!isnumeric)
+    {
+        printf("Usage: ./caesar key");
     }
 
 }
