@@ -58,7 +58,7 @@ void ciphertext(string word, int key)
     // For Each letter shifting its value
     for (int i = 0, n = strlen(word); i < n; i++)
     {
-        // If character is not a character
+        // If character is a character
         if (!ispunct(word[i]) && !isspace(word[i]) && !isdigit(word[i]))
         {
             if (isupper(word[i]))
