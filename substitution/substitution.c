@@ -18,11 +18,11 @@ int main(int argc, string argv[])
 
     // Size of the key
     int n = strlen(argv[1]);
-    /*if (n != 26)
+    if (n != 26)
     {
-        printf("Entered key must have non-repeating 26 alphabets\n");
+        printf("Key must contain 26 characters.\n");
         exit(1);
-    }*/
+    }
 
     // If only one command line argument is provided
 
@@ -32,7 +32,7 @@ int main(int argc, string argv[])
         // If the character is alphabetic return false
         if (!isalpha(argv[1][i]))
         {
-            printf("Entered key must have non-repeating 26 alphabets\n");
+            printf("Usage: %s key\n", argv[0]);
             exit(1);
         }
 
