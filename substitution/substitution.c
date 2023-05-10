@@ -22,37 +22,29 @@ int main(int argc, string argv[])
         printf("Usage: %s key\n", argv[0]);
         return 1;
     }
+
     // If only one command line argument is provided
     else
     {
-        // Finding if the key is Numerical
+        // Finding if the key is alpha
         for (int i = 0, n = strlen(argv[1]); i < n; i++)
         {
             // If the character is alphabetic return false
-            if (isalpha(argv[1][i]))
+            if (!isalpha(argv[1][i]))
             {
-                isnumeric = false;
+                alpha = false;
+                printf("Please Enter only alphabets\n");
+                return 1;
             }
         }
     }
 
-    // If key is numeric convert to str to int
-    if (isnumeric)
-    {
-        key = atoi(argv[1]);
-    }
-    // Print error and return 1
-    else
-    {
-        printf("Usage: ./caesar key\n");
-        return 1;
-    }
 
     // Prompting user for messager to cipher
-    string messsage = get_string("Plaintext:  ");
+    //string messsage = get_string("Plaintext:  ");
     // Deciphering the message
-    string cipher = ciphertext(messsage, key);
-    printf("ciphertext: %s\n", cipher);
+    //string cipher = ciphertext(messsage, key);
+    //printf("ciphertext: %s\n", cipher);
     return 0;
 
 }
