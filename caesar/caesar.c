@@ -19,10 +19,12 @@ int main(int argc, string argv[])
     // If only one command line argument is provided
     else
     {
-        // Finding if the key is Numerica
+        // Finding if the key is Numerical
+        bool isnumeric = true;
         for (int i = 0, n = strlen(argv[1]); i < n; i++)
         {
             printf("%c\n", argv[1][i]);
+            
         }
     }
 
