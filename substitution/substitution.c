@@ -8,8 +8,8 @@ string ciphertext(string word, int key);
 
 int main(int argc, string argv[])
 {
-    bool alpha = true;
-    int key = 0;
+
+    string key;
     // If no or more than one command line argument is provided
     if (argc != 2)
     {
@@ -17,8 +17,18 @@ int main(int argc, string argv[])
         exit(1);
     }
 
+    // Size of the key
+    int n = strlen(argv[1]);
+    if (n != 26)
+    {
+        printf("Entered key must have non-repeating 26 characters\n");
+        exit(1);
+    }
+
     // If only one command line argument is provided
-    // Finding if the key is alpha
+
+    bool alpha = true;
+    // Finding if the key is alphabatic? and non-repating
     for (int i = 0, n = strlen(argv[1]); i < n; i++)
     {
         // If the character is alphabetic return false
@@ -26,7 +36,11 @@ int main(int argc, string argv[])
         {
             alpha = false;
             printf("Please Enter only alphabets\n");
-            return 1;
+            exit(1);
+        }
+        else
+        {
+            key[i] = 
         }
     }
 
