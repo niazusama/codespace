@@ -35,13 +35,13 @@ int main(int argc, string argv[])
             printf("Usage: %s key\n", argv[0]);
             exit(1);
         }
-
+        // Either characters are repeating or not?
         for (int j = 0; j < n; j++)
         {
             if (i != j && argv[1][i] == argv[1][j])
             {
-            printf("Entered key must have non-repeating 26 alphabets\n");
-            exit(1);
+                printf("Entered key must have non-repeating 26 alphabets\n");
+                exit(1);
             }
         }
     }
