@@ -60,6 +60,11 @@ void ciphertext(string word, int key)
     {
         if (ispunct(word[i]) || isspace(word[i]) || isalnum(word[i]))
         {
+            printf("Not a characters are: %c\n", word[i]);
+        }
+        else
+        {
+
             if (isupper(word[i]))
             {
                 printf("Upper case characters are: %c\n", word[i]);
@@ -68,10 +73,6 @@ void ciphertext(string word, int key)
             {
                 printf("Lower case characters are: %c\n", word[i]);
             }
-        }
-        else
-        {
-            printf("Not a characters are: %c\n", word[i]);
         }
 
     }
