@@ -58,14 +58,21 @@ void ciphertext(string word, int key)
     // For Each letter shifting its value
     for (int i = 0, n = strlen(word); i < n; i++)
     {
-        
-        if (isupper(word[i]))
+        if (ispunct(word[i]) || isspace(word[i]) || isalnum(word[i]))
         {
-            printf("Upper case characters are: %c\n", word[i]);
+            if (isupper(word[i]))
+            {
+                printf("Upper case characters are: %c\n", word[i]);
+            }
+            else
+            {
+                printf("Lower case characters are: %c\n", word[i]);
+            }
         }
         else
         {
-            printf("Lower case characters are: %c\n", word[i]);
+            printf("Not a characters are: %c\n", word[i]);
         }
+
     }
 }
