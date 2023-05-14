@@ -9,5 +9,8 @@ int main(int argc, string argv[])
 
 void atio(string word)
 {
+    // Finding the length of string
+    int n = strlen(word);
+
     
 }
