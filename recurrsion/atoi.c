@@ -25,6 +25,6 @@ void atio(string word)
         atio(word);
     }
 
-    int val = word[n-1];
+    int val = word[n-1] - '0';
     word[n-1] = '\0';
 }
