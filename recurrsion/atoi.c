@@ -5,6 +5,9 @@
 int main(int argc, string argv[])
 {
     printf("%lu\n", strlen(argv[1]));
+    argv[1][strlen(argv[1])-1] = '\0';
+    printf("%lu\n", strlen(argv[1]));
+    printf("%s\n", argv[1]);
 
 }
 
